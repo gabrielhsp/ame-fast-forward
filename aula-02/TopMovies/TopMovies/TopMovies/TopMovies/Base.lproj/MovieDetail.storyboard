@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oRX-Xd-OXa">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sbB-Wy-OZe">
+            <objects>
+                <viewController id="oRX-Xd-OXa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4q4-YW-IPT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hansolo" translatesAutoresizingMaskIntoConstraints="NO" id="Blo-9o-VoQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="38E-ve-5gU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-8P-bso">
+                                <rect key="frame" x="161" y="93.666666666666671" width="53" height="53.000000000000014"/>
+                                <state key="normal" backgroundImage="play"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4G-xG-Xcn">
+                                <rect key="frame" x="20" y="200" width="335" height="652"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action | Adventure | Fantasy | Drama | Sci-Fi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uD-jQ-yF8">
+                                <rect key="frame" x="36" y="286.33333333333331" width="224" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="2h 15min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-Xl-QFJ">
+                                <rect key="frame" x="276" y="286.33333333333331" width="63" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★ ★ ★ ★ ☆ 7.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B3-0b-rG9">
+                                <rect key="frame" x="36" y="332.33333333333331" width="303" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.99215686274509807" green="0.80000000000000004" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APy-hi-LzL">
+                                <rect key="frame" x="36" y="366.33333333333331" width="303" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UTt-Kq-oW8">
+                                <rect key="frame" x="36" y="388.33333333333326" width="303" height="368.66666666666674"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Han Solo: Uma História Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74G-VM-15Z">
+                                <rect key="frame" x="36" y="220" width="303" height="57.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="laN-GS-2eB" firstAttribute="bottom" secondItem="UTt-Kq-oW8" secondAttribute="bottom" constant="21" id="0Jt-4t-q1w"/>
+                            <constraint firstItem="APy-hi-LzL" firstAttribute="leading" secondItem="5B3-0b-rG9" secondAttribute="leading" id="71O-Ex-iFq"/>
+                            <constraint firstItem="APy-hi-LzL" firstAttribute="trailing" secondItem="5B3-0b-rG9" secondAttribute="trailing" id="9DO-TN-EDD"/>
+                            <constraint firstItem="laN-GS-2eB" firstAttribute="trailing" secondItem="I4G-xG-Xcn" secondAttribute="trailing" constant="20" id="9UI-9B-kBx"/>
+                            <constraint firstItem="Blo-9o-VoQ" firstAttribute="trailing" secondItem="laN-GS-2eB" secondAttribute="trailing" id="DNd-LY-Nff"/>
+                            <constraint firstItem="I4G-xG-Xcn" firstAttribute="top" secondItem="Blo-9o-VoQ" secondAttribute="bottom" constant="-80" id="JVk-Yt-8kk"/>
+                            <constraint firstItem="5B3-0b-rG9" firstAttribute="leading" secondItem="4uD-jQ-yF8" secondAttribute="leading" id="JhH-cI-PxO"/>
+                            <constraint firstItem="HTU-8P-bso" firstAttribute="centerY" secondItem="Blo-9o-VoQ" secondAttribute="centerY" constant="-20" id="QZe-qz-9H4"/>
+                            <constraint firstItem="Blo-9o-VoQ" firstAttribute="top" secondItem="4q4-YW-IPT" secondAttribute="top" id="S2o-jM-5Lq"/>
+                            <constraint firstItem="5B3-0b-rG9" firstAttribute="trailing" secondItem="a6C-Xl-QFJ" secondAttribute="trailing" id="Sdl-EH-xbK"/>
+                            <constraint firstItem="74G-VM-15Z" firstAttribute="top" secondItem="I4G-xG-Xcn" secondAttribute="top" constant="20" id="bpu-Cz-Tog"/>
+                            <constraint firstItem="74G-VM-15Z" firstAttribute="leading" secondItem="I4G-xG-Xcn" secondAttribute="leading" constant="16" id="cR1-f8-ost"/>
+                            <constraint firstItem="HTU-8P-bso" firstAttribute="centerX" secondItem="Blo-9o-VoQ" secondAttribute="centerX" id="dp9-rP-xQQ"/>
+                            <constraint firstItem="UTt-Kq-oW8" firstAttribute="leading" secondItem="APy-hi-LzL" secondAttribute="leading" id="ege-oQ-Ik9"/>
+                            <constraint firstItem="5B3-0b-rG9" firstAttribute="top" secondItem="4uD-jQ-yF8" secondAttribute="bottom" constant="10" id="el9-I0-XkL"/>
+                            <constraint firstItem="I4G-xG-Xcn" firstAttribute="leading" secondItem="laN-GS-2eB" secondAttribute="leading" constant="20" id="exh-bR-6cQ"/>
+                            <constraint firstItem="Blo-9o-VoQ" firstAttribute="leading" secondItem="laN-GS-2eB" secondAttribute="leading" id="f4M-hw-L7x"/>
+                            <constraint firstItem="74G-VM-15Z" firstAttribute="trailing" secondItem="I4G-xG-Xcn" secondAttribute="trailing" constant="-16" id="gaw-fe-qfE"/>
+                            <constraint firstItem="UTt-Kq-oW8" firstAttribute="top" secondItem="APy-hi-LzL" secondAttribute="bottom" constant="4" id="gfa-8y-moP"/>
+                            <constraint firstItem="4uD-jQ-yF8" firstAttribute="leading" secondItem="74G-VM-15Z" secondAttribute="leading" id="gxK-HG-hyR"/>
+                            <constraint firstItem="4uD-jQ-yF8" firstAttribute="top" secondItem="74G-VM-15Z" secondAttribute="bottom" constant="9" id="hUg-oo-zAp"/>
+                            <constraint firstItem="a6C-Xl-QFJ" firstAttribute="top" secondItem="4uD-jQ-yF8" secondAttribute="top" id="kBO-ZZ-N0B"/>
+                            <constraint firstItem="APy-hi-LzL" firstAttribute="top" secondItem="5B3-0b-rG9" secondAttribute="bottom" constant="16" id="lDt-RJ-Zo9"/>
+                            <constraint firstItem="a6C-Xl-QFJ" firstAttribute="leading" secondItem="4uD-jQ-yF8" secondAttribute="trailing" constant="16" id="p7m-cD-tPu"/>
+                            <constraint firstItem="a6C-Xl-QFJ" firstAttribute="trailing" secondItem="74G-VM-15Z" secondAttribute="trailing" id="q7c-ng-nDx"/>
+                            <constraint firstAttribute="bottom" secondItem="I4G-xG-Xcn" secondAttribute="bottom" constant="-40" id="tVP-bv-yl6"/>
+                            <constraint firstItem="UTt-Kq-oW8" firstAttribute="trailing" secondItem="APy-hi-LzL" secondAttribute="trailing" id="uWm-8Z-kyc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laN-GS-2eB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xbh-D4-CC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386.4000000000001" y="20.689655172413794"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hansolo" width="400" height="330"/>
+        <image name="play" width="53" height="53"/>
+    </resources>
+</document>
