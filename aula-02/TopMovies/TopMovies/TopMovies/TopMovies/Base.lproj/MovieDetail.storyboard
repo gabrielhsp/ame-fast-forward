@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Movie View Controller-->
         <scene sceneID="sbB-Wy-OZe">
             <objects>
-                <viewController id="oRX-Xd-OXa" sceneMemberID="viewController">
+                <viewController id="oRX-Xd-OXa" customClass="MovieViewController" customModule="TopMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4q4-YW-IPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +156,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="ivPoster" destination="Blo-9o-VoQ" id="O3h-ht-R7o"/>
+                        <outlet property="lbCategories" destination="4uD-jQ-yF8" id="O4X-iq-iKt"/>
+                        <outlet property="lbDuration" destination="a6C-Xl-QFJ" id="Bet-7z-ImB"/>
+                        <outlet property="lbRating" destination="5B3-0b-rG9" id="DE1-fW-wGC"/>
+                        <outlet property="lbTitle" destination="74G-VM-15Z" id="ZoO-CI-eVt"/>
+                        <outlet property="tvSummary" destination="UTt-Kq-oW8" id="I5i-wH-6fE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbh-D4-CC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

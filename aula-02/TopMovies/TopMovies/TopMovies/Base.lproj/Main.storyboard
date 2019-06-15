@@ -14,8 +14,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QMT-kO-wgJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LtV-65-b00">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="LtV-65-b00">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="372" y="21"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Movies-->
         <scene sceneID="3EP-fD-SHe">
             <objects>
-                <tableViewController id="dKz-5T-dIx" sceneMemberID="viewController">
+                <tableViewController id="dKz-5T-dIx" customClass="MoviesTableViewController" customModule="TopMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="o9t-vv-juX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,12 +48,8 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="dKz-5T-dIx" id="0hU-xd-lai"/>
-                            <outlet property="delegate" destination="dKz-5T-dIx" id="s4Z-LY-8RF"/>
-                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="syM-Wr-w9P"/>
+                    <navigationItem key="navigationItem" title="Movies" id="syM-Wr-w9P"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQR-gc-IaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
