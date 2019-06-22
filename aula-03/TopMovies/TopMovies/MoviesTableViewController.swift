@@ -34,8 +34,11 @@ class MoviesTableViewController: UITableViewController {
     
     private func prepareTableView() {
         let movieTableViewCell = UINib(nibName: String(describing: MovieTableViewCell.self), bundle: nil)
+        let listTableViewCell = UINib(nibName: String(describing: ListTableViewCell.self), bundle: nil)
         
         tableView.register(movieTableViewCell, forCellReuseIdentifier: ItemType.movie.rawValue)
+        tableView.register(listTableViewCell, forCellReuseIdentifier: ItemType.list.rawValue)
+        
         tableView.dataSource = dataSource
         tableView.delegate = delegate
     }
