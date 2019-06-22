@@ -24,7 +24,7 @@ class MovieTableViewCell: UITableViewCell {
 extension MovieTableViewCell: ReusableMovieCell {
     func prepare(with movie: Movie) {
         lbTitle.text = movie.title
-        lbRating.text = "\(movie.rating)"
+        lbRating.text = movie.movieRating
         lbSummary.text = movie.summary
         ivPoster.image = movie.image as? UIImage
     }

@@ -9,7 +9,11 @@
 import UIKit
 
 extension UIStoryboard {
-    static var movieDetail: UIStoryboard = {
+    static var movieDetail: UIStoryboard {
         return UIStoryboard(name: "MovieDetail", bundle: nil)
-    }()
+    }
+    
+    static var movieRegistration: UIStoryboard {
+        return UIStoryboard(name: "MovieRegistration", bundle: nil)
+    }
 }

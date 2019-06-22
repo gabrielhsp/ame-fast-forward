@@ -11,6 +11,8 @@ import CoreData
 
 protocol MoviePresenter: class {
     func presentMovie(with indexPath: IndexPath)
+    func deleteMovie(with indexPath: IndexPath)
+    func editMovie(with indexPath: IndexPath)
 }
 
 class MoviesTableViewController: UITableViewController {
@@ -48,6 +50,24 @@ class MoviesTableViewController: UITableViewController {
 
 // MARK: - MoviePresenter
 extension MoviesTableViewController: MoviePresenter {
+    func deleteMovie(with indexPath: IndexPath) {
+        let movie = dataSource.fetchedResultController.object(at: indexPath)
+        
+        context.delete(movie)
+        
+        try? context.save()
+    }
+    
+    func editMovie(with indexPath: IndexPath) {
+        let movie = dataSource.movies[indexPath.row]
+        let movieDetailsSB = UIStoryboard.movieRegistration
+        guard let movieVC = movieDetailsSB.instantiateInitialViewController() as? MovieRegistrationViewController else { return }
+        
+        movieVC.movie = movie
+        
+        navigationController?.show(movieVC, sender: nil)
+    }
+    
     func presentMovie(with indexPath: IndexPath) {
         let movie = dataSource.movies[indexPath.row]
         let movieDetailsSB = UIStoryboard.movieDetail

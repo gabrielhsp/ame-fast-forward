@@ -12,6 +12,9 @@ import CoreData
 extension UIViewController {
     var context: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         
         return appDelegate.persistentContainer.viewContext
     }

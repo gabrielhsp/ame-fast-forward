@@ -37,7 +37,11 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Movies" largeTitleDisplayMode="always" id="syM-Wr-w9P">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ueh-Q9-Cr6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ueh-Q9-Cr6">
+                            <connections>
+                                <segue destination="nkV-zo-FSx" kind="show" id="ehI-FK-i7m"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
@@ -45,13 +49,21 @@
             </objects>
             <point key="canvasLocation" x="1399" y="21"/>
         </scene>
+        <!--MovieRegistration-->
+        <scene sceneID="Nax-3U-FfQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MovieRegistration" id="nkV-zo-FSx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugf-DP-27z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2211" y="-203"/>
+        </scene>
         <!--MovieDetail-->
         <scene sceneID="8HK-08-Net">
             <objects>
                 <viewControllerPlaceholder storyboardName="MovieDetail" id="LBf-NE-m2M" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iY-20-MH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2265" y="21"/>
+            <point key="canvasLocation" x="2238" y="38"/>
         </scene>
     </scenes>
 </document>

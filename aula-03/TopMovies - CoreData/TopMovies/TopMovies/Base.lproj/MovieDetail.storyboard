@@ -92,14 +92,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIg-38-Pan">
+                                <rect key="frame" x="325" y="48" width="24" height="24"/>
+                                <state key="normal" backgroundImage="editIcon"/>
+                                <connections>
+                                    <segue destination="nm1-aw-Pzb" kind="show" id="4po-ka-39p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="laN-GS-2eB" firstAttribute="bottom" secondItem="UTt-Kq-oW8" secondAttribute="bottom" constant="21" id="0Jt-4t-q1w"/>
+                            <constraint firstItem="yIg-38-Pan" firstAttribute="top" secondItem="laN-GS-2eB" secondAttribute="top" constant="4" id="3Pz-HT-X1a"/>
                             <constraint firstItem="APy-hi-LzL" firstAttribute="leading" secondItem="5B3-0b-rG9" secondAttribute="leading" id="71O-Ex-iFq"/>
                             <constraint firstItem="APy-hi-LzL" firstAttribute="trailing" secondItem="5B3-0b-rG9" secondAttribute="trailing" id="9DO-TN-EDD"/>
                             <constraint firstItem="laN-GS-2eB" firstAttribute="trailing" secondItem="I4G-xG-Xcn" secondAttribute="trailing" constant="20" id="9UI-9B-kBx"/>
                             <constraint firstItem="Blo-9o-VoQ" firstAttribute="trailing" secondItem="laN-GS-2eB" secondAttribute="trailing" id="DNd-LY-Nff"/>
+                            <constraint firstItem="yIg-38-Pan" firstAttribute="leading" secondItem="Blo-9o-VoQ" secondAttribute="trailing" constant="-50" id="HDK-rF-TU9"/>
                             <constraint firstItem="I4G-xG-Xcn" firstAttribute="top" secondItem="Blo-9o-VoQ" secondAttribute="bottom" constant="-80" id="JVk-Yt-8kk"/>
                             <constraint firstItem="5B3-0b-rG9" firstAttribute="leading" secondItem="4uD-jQ-yF8" secondAttribute="leading" id="JhH-cI-PxO"/>
                             <constraint firstAttribute="trailing" secondItem="74G-VM-15Z" secondAttribute="trailing" constant="20" id="LTx-jH-l4R"/>
@@ -169,8 +178,17 @@
             </objects>
             <point key="canvasLocation" x="2386.4000000000001" y="20.689655172413794"/>
         </scene>
+        <!--MovieRegistration-->
+        <scene sceneID="cI6-rb-M1z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MovieRegistration" id="nm1-aw-Pzb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGk-DG-CF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3211" y="21"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="editIcon" width="24" height="24"/>
         <image name="hansolo" width="400" height="330"/>
         <image name="play" width="53" height="53"/>
     </resources>

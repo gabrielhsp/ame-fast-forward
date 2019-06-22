@@ -18,9 +18,10 @@ final class MovieViewController: UIViewController {
     
     var movie: Movie?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        renderMovie()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let movieRegistrationViewController = segue.destination as? MovieRegistrationViewController {
+            movieRegistrationViewController.movie = movie
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -31,10 +32,11 @@ final class MovieViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        renderMovie()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
@@ -45,7 +47,7 @@ final class MovieViewController: UIViewController {
         lbTitle.text = movie.title
         lbCategories.text = movie.categories.valid
         lbDuration.text = movie.duration
-        lbRating.text = "\(movie.rating)"
+        lbRating.text = movie.movieRating
         tvSummary.text = movie.summary
     }
 }
