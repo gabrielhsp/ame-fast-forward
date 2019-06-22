@@ -13,6 +13,10 @@ class ListCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        imageViewPoster.layer.cornerRadius = imageViewPoster.frame.size.height / 2
+        imageViewPoster.layer.borderWidth = 2
+        imageViewPoster.layer.borderColor = #colorLiteral(red: 0.9751263261, green: 0.8584819436, blue: 0.5046803951, alpha: 1)
     }
 }
 
