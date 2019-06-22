@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9BB7F3B722BE7149000800F5 /* TopMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7F3B522BE7149000800F5 /* TopMovies.xcdatamodeld */; };
 		9BB7F3DA22BE74D6000800F5 /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7F3D922BE74D6000800F5 /* UIViewController+Context.swift */; };
+		9BB7F3E022BE82DC000800F5 /* MovieRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB7F3DF22BE82DC000800F5 /* MovieRegistration.storyboard */; };
+		9BB7F3E222BE83CA000800F5 /* MovieRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7F3E122BE83CA000800F5 /* MovieRegistrationViewController.swift */; };
 		9BD9A11422B5195F00FA0CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A11322B5195F00FA0CE8 /* AppDelegate.swift */; };
 		9BD9A11622B5195F00FA0CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A11522B5195F00FA0CE8 /* ViewController.swift */; };
 		9BD9A11922B5195F00FA0CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD9A11722B5195F00FA0CE8 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		9BB7F3B622BE7149000800F5 /* TopMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TopMovies.xcdatamodel; sourceTree = "<group>"; };
 		9BB7F3D922BE74D6000800F5 /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
+		9BB7F3DF22BE82DC000800F5 /* MovieRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieRegistration.storyboard; sourceTree = "<group>"; };
+		9BB7F3E122BE83CA000800F5 /* MovieRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRegistrationViewController.swift; sourceTree = "<group>"; };
 		9BD9A11022B5195F00FA0CE8 /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD9A11322B5195F00FA0CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BD9A11522B5195F00FA0CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BB7F3DB22BE82A1000800F5 /* MovieRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				9BB7F3DE22BE82BC000800F5 /* Model */,
+				9BB7F3DD22BE82B8000800F5 /* View */,
+				9BB7F3DC22BE82B4000800F5 /* Controller */,
+			);
+			name = MovieRegistration;
+			sourceTree = "<group>";
+		};
+		9BB7F3DC22BE82B4000800F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BB7F3E122BE83CA000800F5 /* MovieRegistrationViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9BB7F3DD22BE82B8000800F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BB7F3DF22BE82DC000800F5 /* MovieRegistration.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9BB7F3DE22BE82BC000800F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9BD9A10722B5195E00FA0CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +144,7 @@
 				9BED261522B56C55006AD65C /* Home */,
 				9BF1EBBC22BE54D200A943C5 /* Movies */,
 				9BED261A22B56C84006AD65C /* MovieDetail */,
+				9BB7F3DB22BE82A1000800F5 /* MovieRegistration */,
 				9BED262222B56D23006AD65C /* Resource */,
 				9BED261F22B56CD4006AD65C /* Shared */,
 			);
@@ -322,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD9A12922B52A3100FA0CE8 /* MovieDetail.storyboard in Resources */,
+				9BB7F3E022BE82DC000800F5 /* MovieRegistration.storyboard in Resources */,
 				9BD9A11E22B5196000FA0CE8 /* LaunchScreen.storyboard in Resources */,
 				9BED261E22B56CCE006AD65C /* MovieTableViewCell.xib in Resources */,
 				9BD9A11B22B5196000FA0CE8 /* Assets.xcassets in Resources */,
@@ -350,6 +389,7 @@
 				9BED263022B5914F006AD65C /* MoviesTableViewDelegate.swift in Sources */,
 				9BED263522B596AE006AD65C /* UIStoryboard+Name.swift in Sources */,
 				9BD9A11622B5195F00FA0CE8 /* ViewController.swift in Sources */,
+				9BB7F3E222BE83CA000800F5 /* MovieRegistrationViewController.swift in Sources */,
 				9BED262C22B5846A006AD65C /* Optional+Valid.swift in Sources */,
 				9BF1EBC722BE597200A943C5 /* ListCollectionViewCell.swift in Sources */,
 				9BD9A12B22B5655300FA0CE8 /* StyleView.swift in Sources */,

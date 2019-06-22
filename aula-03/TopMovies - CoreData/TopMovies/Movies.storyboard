@@ -36,7 +36,9 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Movies" largeTitleDisplayMode="always" id="syM-Wr-w9P"/>
+                    <navigationItem key="navigationItem" title="Movies" largeTitleDisplayMode="always" id="syM-Wr-w9P">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ueh-Q9-Cr6"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQR-gc-IaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
