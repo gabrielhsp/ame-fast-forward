@@ -16,6 +16,7 @@ struct Movie: Codable {
     var summary: String?
     var image: String?
     var itemType: ItemType?
+    var items: [Movie]?
     
     var stringCategories: String {
         return categories.valid // categories?.joined(separator: " | ") ?? ""
@@ -29,5 +30,6 @@ struct Movie: Codable {
         case summary = "description"
         case image
         case itemType = "item_type"
+        case items
     }
 }

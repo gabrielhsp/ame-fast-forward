@@ -37,10 +37,10 @@ extension MoviesTableViewDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let movie = movies[indexPath.row]
         let reuseIdentifier = movie.itemType?.rawValue ?? ItemType.movie.rawValue
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? ReusableMovieCell else { return UITableViewCell() }
         
         cell.prepare(with: movie)
         
-        return cell
+        return cell as! UITableViewCell
     }
 }

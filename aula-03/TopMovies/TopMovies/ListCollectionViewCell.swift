@@ -13,7 +13,11 @@ class ListCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+}
 
+extension ListCollectionViewCell: ReusableMovieCell {
+    func prepare(with movie: Movie) {
+        imageViewPoster.image = UIImage(named: movie.image.valid)
+    }
 }
