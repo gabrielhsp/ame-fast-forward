@@ -69,7 +69,7 @@ extension MoviesTableViewController: MoviePresenter {
     }
     
     func presentMovie(with indexPath: IndexPath) {
-        let movie = dataSource.movies[indexPath.row]
+        let movie = dataSource.movies[indexPath.row
         let movieDetailsSB = UIStoryboard.movieDetail
         guard let movieVC = movieDetailsSB.instantiateInitialViewController() as? MovieViewController else { return }
         
